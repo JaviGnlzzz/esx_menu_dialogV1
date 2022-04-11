@@ -1,0 +1,113 @@
+@font-face{
+	font-family: BoxedRound;
+	src: url("https://cdn.discordapp.com/attachments/886714318471712798/896824121164451900/BoxedRound.ttf");
+}
+
+#controls {
+  font-family: BoxedRound;
+	font-size: 4em;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	bottom: 40;
+	right: 40;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+  font-family: BoxedRound;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+	position: absolute;
+	overflow: hidden;
+	top: 45%;
+	left: 50%;
+	width: 600px;
+	height: 200px;
+	transform: translate(-50%, -50%);
+  /* border: solid #4993f5; */
+  border-radius: 7px;
+}
+
+.dialog .head span::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+  font-family: BoxedRound;
+	width: 60%;
+	height: 32px;
+  outline: 0;
+	background: rgb(0, 0, 0);
+	box-shadow: -1px 0 10px rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 110px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  border-style: groove;
+  border: .12vw solid white;
+  border-radius: 5px;
+}
+
+.dialog input[type="text"]:active, .dialog input[type="text"]:hover {
+  color: white;
+}
+
+.dialog textarea {
+  color: #fff;
+	width: 100%;
+	height: 128px;
+}
+
+.dialog button[name="submit"] {
+  font-family: BoxedRound;
+	width: 7%;
+	height: 32px;
+  margin-top: -32px;
+  margin-left: 490px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.dialog button[name="submit"]:hover{
+  background-color: white;
+  /* text-shadow: -1px 0 10px #ffffff; */
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid #000000; */
+  border-radius: 10px;
+}
+.dialog button[name="cancel"] {
+  font-family: BoxedRound;
+	width: 7%;
+	height: 32px;
+  margin-top: -32px;
+  margin-left: 550px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.dialog button[name="cancel"]:hover {
+  background-color: white;
+  /* text-shadow: -1px 0 10px #ffffff; */
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid #000000; */
+  border-radius: 10px;
+}
+
